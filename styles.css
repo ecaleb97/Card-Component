@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#card1 {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#card2 {
+    background: hsl(184, 100%, 22%);
+}
+
+#card3 {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+.image,
+.title, 
+.text,
+.btn {
+    margin-left: 20px;
+}
+
+.image,
+.title, 
+.text {
+    margin-right: 20px;
+}
+
+.image {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.image img {
+    margin: 0;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+}
+
+.text {
+    margin-bottom: 40px;
+}
+
+.text p {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+}
+
+.btn {
+    background: hsl(0, 0%, 100%);
+    border-style: none;
+    margin-left: 20px;
+    width: 100px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#btn1 {
+    color:hsl(31, 77%, 52%);
+}
+
+#btn1:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+#btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn2:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+#btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+#btn3:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+.footer {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+@media screen and (width < 700px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card1 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    #card3 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media screen and (width < 300px) {
+    .card {
+        width: 250px;
+    }
+}
